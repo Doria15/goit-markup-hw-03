@@ -1,3 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
 body{
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -16,15 +26,6 @@ p {
   margin: 0;
 }
 
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::after,
-*::before {
-  box-sizing: inherit;
-}
 
 img {
   display: block;
@@ -43,6 +44,15 @@ a{
   padding: 0;
 }
 
+header{
+  width: 1440px;
+  height: 72px;
+  flex-shrink: 0;
+  padding: 24px 156px;
+  border-bottom: 1px solid #E7E9FC;
+  background-color: #FFFFFF;
+}
+
 .logo-blue{
   color:#4D5AE5;
 }
@@ -53,6 +63,8 @@ a{
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.03em;
+  position: absolute;
+  left: 156px;
 }
 
 
@@ -61,6 +73,11 @@ a{
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 40px;
+  position: absolute;
+  left: 347px;
 }
 
 .menu-link:hover,
@@ -74,6 +91,13 @@ a{
   color:#404BBF;
 }
 
+.contact-info{
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 40px;
+  position: absolute;
+  left: 940px;
+}
 
 .contact-info li{
   font-size: 16px;
@@ -83,6 +107,9 @@ a{
 
 .hero{
   background-color: #2E2F42;
+  width: 1440px;
+  height: 600px;
+  flex-shrink: 0;
 }
 
 .hero-title{
@@ -91,6 +118,7 @@ a{
   line-height: 60px;
   letter-spacing: 0.02em;
   color: #FFFFFF;
+  text-align: center;
 }
 
 .hero-button{
