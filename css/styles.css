@@ -150,6 +150,7 @@ header {
 
 .section {
   padding: 120px 156px;
+  width: 1440px;
 }
 
 .features,
@@ -186,6 +187,10 @@ header {
   color: #434455;
 }
 
+.image-item {
+  border: 1px solid #e7e9fc;
+}
+
 .section-title {
   font-weight: 700;
   font-size: 36px;
@@ -197,7 +202,6 @@ header {
 
 .team {
   background-color: #f4f4fd;
-  width: 1440px;
   height: 732px;
   flex-shrink: 0;
 }
@@ -240,6 +244,10 @@ header {
   letter-spacing: 0.02em;
   color: #434455;
   text-align: center;
+}
+
+.portfolio {
+  padding-top: 216px;
 }
 
 .portfolio-filters {
@@ -287,34 +295,34 @@ header {
 
 .projects {
   width: 1128px;
-  margin-top: 96px;
   display: flex;
   flex-wrap: wrap;
   flex-shrink: 0;
-  gap: 24px;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 
 .project-card {
   display: flex;
   width: 360px;
-  height: 420px;
-  padding: 0px 0px 32px 0px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 32px;
   flex-shrink: 0;
-  border: 1px solid #e7e9fc;
-  background-color: #ffffff;
 }
 
 .project-wrapper {
   display: flex;
-  padding: 0px 16px;
+  padding: 32px 16px;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   gap: 8px;
   align-self: stretch;
+  border-top: 0px;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  background-color: #ffffff;
 }
 
 .project-title {
