@@ -43,13 +43,29 @@ a {
   padding: 0;
 }
 
-header {
+.header {
   width: 1440px;
-  height: 72px;
-  flex-shrink: 0;
-  padding: 24px 156px;
   border-bottom: 1px solid #e7e9fc;
   background-color: #ffffff;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  padding-left: 153px;
+  padding-right: 153px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo-blue {
@@ -62,8 +78,7 @@ header {
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.03em;
-  position: absolute;
-  left: 156px;
+  padding: 24px 0;
 }
 
 .menu-items {
@@ -74,8 +89,12 @@ header {
   display: inline-flex;
   align-items: flex-start;
   gap: 40px;
-  position: absolute;
-  left: 347px;
+  margin-left: 76px;
+}
+
+.menu-link,
+.contact-link {
+  padding: 24px 0;
 }
 
 .menu-link:hover,
@@ -93,8 +112,6 @@ header {
   display: inline-flex;
   align-items: flex-start;
   gap: 40px;
-  position: absolute;
-  left: 940px;
 }
 
 .contact-info li {
@@ -108,6 +125,11 @@ header {
   width: 1440px;
   height: 600px;
   flex-shrink: 0;
+  padding: 188px 0;
+}
+
+.hero-container {
+  text-align: center;
 }
 
 .hero-title {
@@ -120,7 +142,7 @@ header {
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
-  padding: 188px 472px 292px;
+  margin-bottom: 48px;
 }
 
 .hero-button {
@@ -138,9 +160,6 @@ header {
   padding: 16px 32px;
   align-items: flex-start;
   gap: 10px;
-  position: absolute;
-  top: 428px;
-  left: 636px;
 }
 
 .hero-button:hover {
@@ -149,8 +168,11 @@ header {
 }
 
 .section {
-  padding: 120px 156px;
-  width: 1440px;
+  padding: 120px 0;
+}
+
+.section-no-top-padding {
+  padding-top: 0;
 }
 
 .features,
@@ -158,19 +180,15 @@ header {
 .team-members {
   display: flex;
   flex-shrink: 0;
-  gap: 24px;
+  margin-left: -24px;
+  margin-top: -24px;
 }
 
-.feature {
-  padding-bottom: 0px;
-}
-
-.feature-item {
-  display: flex;
-  width: 264px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
+.feature-item,
+.image-item,
+.team-card {
+  margin-left: 24px;
+  margin-top: 24px;
 }
 
 .feature-title {
@@ -178,6 +196,7 @@ header {
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .feature-description {
@@ -185,10 +204,6 @@ header {
   line-height: 24px;
   letter-spacing: 0.02em;
   color: #434455;
-}
-
-.image-item {
-  border: 1px solid #e7e9fc;
 }
 
 .section-title {
@@ -200,14 +215,11 @@ header {
   margin-bottom: 72px;
 }
 
-.team {
+.section-team {
   background-color: #f4f4fd;
-  height: 732px;
-  flex-shrink: 0;
 }
 
 .team-card {
-  display: inline-flex;
   border-radius: 0px 0px 4px 4px;
   background: #ffffff;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
@@ -218,7 +230,6 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 32px;
 }
 
 .card-wrapper {
@@ -228,6 +239,10 @@ header {
   justify-content: center;
   align-items: center;
   gap: 8px;
+}
+
+.team-image {
+  margin-bottom: 30px;
 }
 
 .team-name {
@@ -246,24 +261,23 @@ header {
   text-align: center;
 }
 
-.portfolio {
-  padding-top: 216px;
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .portfolio-filters {
   display: inline-flex;
   align-items: flex-start;
   gap: 24px;
-  position: absolute;
-  top: 168px;
-  left: 427px;
+  margin-bottom: 72px;
 }
 
 .filter-button {
   background-color: #f4f4fd;
   border: 1px solid #e7e9fc;
   border-radius: 4px;
-  align-items: center;
   color: #4d5ae5;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -294,20 +308,16 @@ header {
 }
 
 .projects {
-  width: 1128px;
   display: flex;
   flex-wrap: wrap;
-  flex-shrink: 0;
   column-gap: 24px;
   row-gap: 48px;
 }
 
 .project-card {
   display: flex;
-  width: 360px;
   flex-direction: column;
   align-items: flex-start;
-  flex-shrink: 0;
 }
 
 .project-wrapper {
@@ -339,18 +349,9 @@ header {
   color: #434455;
 }
 
-footer {
+.footer {
   background-color: #2e2f42;
-  width: 1440px;
-  height: 312px;
-  flex-shrink: 0;
-}
-
-.footer-text-container {
-  padding: 100px 1020px 100px 156px;
-  display: flex;
-  flex-direction: column;
-  gap: 17.5px;
+  padding: 100px 0;
 }
 
 .footer-logo {
@@ -360,6 +361,8 @@ footer {
   line-height: 21px;
   letter-spacing: 0.03em;
   color: #f4f4fd;
+  display: block;
+  margin-bottom: 20px;
 }
 
 .footer-text {
